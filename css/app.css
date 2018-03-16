@@ -1,0 +1,138 @@
+﻿body {
+    align: center;
+    padding: 50px 0px 0px 0px !important;
+    margin-top: 100px;
+}
+
+p {
+    font-size: 130%;
+}
+
+.navbar-default {
+    min-height: 100px;
+    background-color:lightgoldenrodyellow;
+    border-bottom: 1px ridge;
+    border-bottom-color: yellowgreen;
+}
+
+.navbar-default .navbar-nav .li {
+    height: 100px;
+}
+
+.row-content {
+    border-bottom : 1.5px dashed ;
+    border-bottom-color: lightgoldenrodyellow;
+    border-bottom-color: yellowgreen;
+    min-height:300px;
+}
+.col-content {
+    padding: 30px 15px 30px 15px;
+}
+.col-title {
+    background-color:lightgoldenrodyellow;
+}
+
+.info-img {
+    max-width: 100%;
+    max-height: 100%;
+    top:0;
+    align-self:center;
+    opacity: 0.8;
+    transition: .5s ease;
+    background-color: #008CBA;
+}
+
+.hci:hover .info-img{
+        opacity: 1;
+}
+.hci:hover .col-title {
+    background-color: white;
+}
+
+@media only screen and (min-width : 768px) {
+    .is-table-row {
+        display: table;
+    }
+
+    .is-table-row [class*="col-"] {
+        float: none;
+        display: table-cell;
+        vertical-align: top;
+    }
+}
+
+
+.cards-list li{
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+table {
+    background: #56566e;
+    color: #c1c1c1;
+}
+
+.user-action {
+    background-color: #d3cee1;
+    color: #170756;
+}
+
+.panel-heading {
+    background-color: #2d3450 !important;
+}
+
+.btn-social {
+    font-size:50px;
+    color: grey;
+}
+
+
+.row-footer {
+    margin: 30px auto auto auto;
+    padding: 50px 0px;
+    background-color: #AfAfAf;
+    font-size: 120%;
+}
+
+.cardItemRow {
+    padding-bottom: 3em !important;
+    font-family: Montserrat;
+    font-size: large;
+    position: relative;
+}
+
+.cardItemTitles {
+    font-size: large;
+    font-family: Montserrat;
+    padding-bottom: 4em;
+}
+
+.cardItem {
+    margin-top: 10px;
+    border: #cdcdcd medium solid;
+    border-radius: 10px;
+    -moz-border-radius: 10px;
+    overflow: auto;
+    background: #ece0d7;
+}
+
+.thumbnail {
+    margin-bottom: 6px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none;
+    margin-top: 10%;
+    width: 5%;
+}
+
+.navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
+    background-color: #f32f245c;
+    background-color: #d9d98e;
+
+}
+
+.btn-xs {
+    font-size: 100%;
+}

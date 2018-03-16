@@ -1,0 +1,41 @@
+﻿
+
+<form role="form">
+    <div class="form-group">
+        <label for="fullName">Name</label>
+        <input type="text" id="fullName" class="form-control" ng-model="updatedCard.fullName" />
+    </div>
+    <div class="form-group">
+        <label for="size">Size</label>
+        <select name="size" id="size" class="form-control" ng-model="updatedCard.size">
+            <option>Small  (6x3cm)</option>
+            <option>Medium (10x5cm)</option>
+            <option>Large  (20x10cm)</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="colourScheme">Color Scheme</label>
+        <input type="text" id="colourScheme" class="form-control" ng-model="updatedCard.colourScheme" />
+    </div>
+    <div class="form-group">
+        <label for="text">Message</label>
+        <textarea name="text" id="text" class="form-control" rows="2" cols="40" ng-model="updatedCard.text"></textarea>
+    </div>
+
+    <div class="form-group">
+        <label for="occasion">Occasion</label>
+        <select name="occasion" id="occasion" class="form-control" ng-model="updatedCard.occasion"
+                ng-options="occ for occ in occasions"></select>
+    </div>
+    <br />
+
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input name="price" id="price" type="text" class="form-control bfh-number" ng-model="updatedCard.price">
+    </div>
+    <div class="col-sm-offset-3 col-sm-9">
+        <input type="submit" class="btn btn-primary" value="Submit" ng-click="submitForm()" />
+        <input type="button" class="btn btn-primary" value="Cancel" ng-click="cancelForm()" />
+    </div>
+</form>
